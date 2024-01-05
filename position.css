@@ -1,0 +1,49 @@
+html, body {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 10px;
+    margin: 0px;
+  }
+.container > div {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(113, 97, 78);
+  }
+.container{
+    height: 100%;
+    display: grid;
+    gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px auto 40px;
+    grid-template-areas: 
+        "h h h h h h h h h h h h"
+        "m c c c c c c c c c c c"
+        "f f f f f f f f f f f f";
+}
+
+.header{
+    background-color: aquamarine;
+    /* When i have 2 column, there is 3 column lines */
+    /* grid-column: 1 / -1; */
+    grid-area: h ;
+}
+
+.menu{
+    background-color: burlywood;
+    grid-area: m;
+}
+
+.content{
+    background-color: chocolate;
+    /* grid-column: 2 / -1 ; */
+    grid-area: c;
+}
+
+.footer{
+    background-color: crimson;
+    /* grid-column: 1 / -1; */
+    grid-area: f;
+
+}

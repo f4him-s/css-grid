@@ -1,0 +1,39 @@
+.container {
+  /* grid-template-column = define the width of the columns */
+  /* grid-template-columns: 100px  auto ; */
+  /* grid-template-rows = define the height of the rows */
+  /* grid-template-rows: 50px 50px 200px;
+     /* grid-gap: 3px; */
+
+  /* grid-template is the shorthand method for grid-template-columns & grid-template-rows */
+  display: grid;
+  /* Start with the rows then column */
+  grid-template: repeat(2, 50px) / repeat(3, 1fr);
+
+  gap: 3px;
+}
+
+.container > div {
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  color: aqua;
+}
+.content1 {
+  background-color: red;
+}
+.content2 {
+  background-color: goldenrod;
+}
+.content3 {
+  background-color: bisque;
+}
+.content4 {
+  background-color: tomato;
+}
+.content5 {
+  background-color: blueviolet;
+}
+.content6 {
+  background-color: cornflowerblue;
+}
